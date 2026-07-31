@@ -7,7 +7,7 @@ document.querySelectorAll('.service-card').forEach((el,i)=>{
   el.style.transitionDelay = (i%3)*0.08 + 's';
 });
 
-const CLINIC_WHATSAPP = '917860023553'; // 91 = India country code + clinic number
+const CLINIC_WHATSAPP = '919354251664'; // 91 = India country code + clinic number
 
 function sendToWhatsApp(event){
   event.preventDefault();
@@ -16,7 +16,7 @@ function sendToWhatsApp(event){
   const service = document.getElementById('fservice').value;
   const date = document.getElementById('fdate').value;
 
-  let message = `Hi Dento Smile, I'd like to book an appointment.\n\n`;
+  let message = `Hi Smile Dental, I'd like to book an appointment.\n\n`;
   message += `Name: ${name}\n`;
   message += `Phone: ${phone}\n`;
   message += `Service: ${service}\n`;
